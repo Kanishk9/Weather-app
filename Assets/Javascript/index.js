@@ -13,12 +13,12 @@ searchInput.addEventListener("keypress", (event) => {
 });
 
 searchButton.addEventListener("click", () => {
-  const city = document.querySelector(".search-box input").value;
+  const city = searchInput.value;
 
   if (city === "") return;
 
   //Create your own account and enter you own pvt API key
-  const apiKey = "Enter your API key";
+  const apiKey = "57465e1422ea75bb4049ec2f83932c05";
 
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
@@ -61,7 +61,7 @@ searchButton.addEventListener("click", () => {
         case "Rain":
           image.src = "./Assets/Images/rainy.png";
           break;
-        case "Mist":
+        case "Haze":
           image.src = "./Assets/Images/mist.png";
           break;
 
