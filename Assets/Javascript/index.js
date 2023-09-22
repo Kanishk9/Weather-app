@@ -18,7 +18,7 @@ searchButton.addEventListener("click", () => {
   if (city === "") return;
 
   //Create your own account and enter you own pvt API key
-  const apiKey = "57465e1422ea75bb4049ec2f83932c05";
+  const apiKey = "Your own API key";
 
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
